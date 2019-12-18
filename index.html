@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Javascript Promises</title>
+    </head>
+    <body>
+
+    </body>
+    <script>
+
+       var promise = new Promise((resolve,reject) => {
+           var flag = false;
+
+           if(flag){
+               resolve("Promise Resolved");
+           }
+           else{
+               reject("Promise Rejected");
+           }
+       })
+       
+       // catch the response
+
+       promise
+       .then(function(successMessage){
+           console.log(successMessage)
+       })
+       .catch(function(errorMessage){
+           console.log(errorMessage)
+       })
+
+    </script>
+</html>
